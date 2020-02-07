@@ -1,0 +1,1 @@
+This File is web pages collection, when you want to use, import this file to Google Chrome or anyothers browser.
