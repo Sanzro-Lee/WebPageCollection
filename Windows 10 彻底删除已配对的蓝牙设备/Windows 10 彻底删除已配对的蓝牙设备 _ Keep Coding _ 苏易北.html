@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="generator" content="Hexo 3.9.0">
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async="" src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/hm.js.下载"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    
+    
+    <meta name="google-site-verification" content="cc3c_UncRv21aEZwqejVxKpUMR7h9ldNUTeYjawUS-g">
+    
+    
+    <meta name="baidu-site-verification" content="HnoV7q61W5">
+    
+    
+    
+    <title>Windows 10 彻底删除已配对的蓝牙设备 | Keep Coding | 苏易北</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Windows,蓝牙">
+    <meta name="description" content="ikbc DC-87 终于重新用蓝牙连上 XPS-13 了，我先去哭会儿！QAQ">
+<meta name="keywords" content="Windows,蓝牙">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows 10 彻底删除已配对的蓝牙设备">
+<meta property="og:url" content="https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/index.html">
+<meta property="og:site_name" content="Keep Coding">
+<meta property="og:description" content="ikbc DC-87 终于重新用蓝牙连上 XPS-13 了，我先去哭会儿！QAQ">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/cover.jpg">
+<meta property="og:image" content="https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/bluetooth.png">
+<meta property="og:image" content="https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/win10-forum.png">
+<meta property="og:updated_time" content="2019-09-01T13:04:11.773Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Windows 10 彻底删除已配对的蓝牙设备">
+<meta name="twitter:description" content="ikbc DC-87 终于重新用蓝牙连上 XPS-13 了，我先去哭会儿！QAQ">
+<meta name="twitter:image" content="https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/cover.jpg">
+    
+        <link rel="alternate" type="application/atom+xml" title="Keep Coding" href="https://abelsu7.top/atom.xml">
+    
+    <link rel="shortcut icon" href="https://abelsu7.top/img/favicon.ico">
+    <link rel="stylesheet" href="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/style.css">
+    <link rel="stylesheet" href="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/prism-tomorrow-night.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<style type="text/css">.v[data-class=v]{font-size:16px;text-align:left}.v[data-class=v] *{-webkit-box-sizing:border-box;box-sizing:border-box;line-height:1.75}.v[data-class=v] .status-bar,.v[data-class=v] .veditor,.v[data-class=v] .vinput,.v[data-class=v] p,.v[data-class=v] pre code{color:#555}.v[data-class=v] .vsys,.v[data-class=v] .vtime{color:#b3b3b3}.v[data-class=v] .text-right{text-align:right}.v[data-class=v] .text-center{text-align:center}.v[data-class=v] img{max-width:100%;border:none}.v[data-class=v] hr{margin:.825em 0;border-color:#f6f6f6;border-style:dashed}.v[data-class=v].hide-avatar .vimg{display:none}.v[data-class=v] a{position:relative;cursor:pointer;color:#1abc9c;text-decoration:none;display:inline-block}.v[data-class=v] a:hover{color:#d7191a}.v[data-class=v] code,.v[data-class=v] pre{background-color:#f8f8f8;padding:.2em .4em;border-radius:3px;font-size:85%;margin:0}.v[data-class=v] pre{padding:10px;overflow:auto;line-height:1.45}.v[data-class=v] pre code{padding:0;background:transparent;white-space:pre-wrap;word-break:keep-all}.v[data-class=v] blockquote{color:#666;margin:.5em 0;padding:0 0 0 1em;border-left:8px solid hsla(0,0%,93%,.5)}.v[data-class=v] .vinput{border:none;resize:none;outline:none;padding:10px 5px;max-width:100%;font-size:.775em}.v[data-class=v] input[type=checkbox],.v[data-class=v] input[type=radio]{display:inline-block;vertical-align:middle;margin-top:-2px}.v[data-class=v] .vicon{cursor:pointer;display:inline-block;overflow:hidden;fill:#555;vertical-align:middle}.v[data-class=v] .vicon+.vicon{margin-left:10px}.v[data-class=v] .vicon.actived{fill:#66b1ff}.v[data-class=v] .vrow{font-size:0;padding:10px 0}.v[data-class=v] .vrow .vcol{display:inline-block;vertical-align:middle;font-size:14px}.v[data-class=v] .vrow .vcol.vcol-20{width:20%}.v[data-class=v] .vrow .vcol.vcol-30{width:30%}.v[data-class=v] .vrow .vcol.vcol-40{width:40%}.v[data-class=v] .vrow .vcol.vcol-50{width:50%}.v[data-class=v] .vrow .vcol.vcol-60{width:60%}.v[data-class=v] .vrow .vcol.vcol-70{width:70%}.v[data-class=v] .vrow .vcol.vcol-80{width:80%}.v[data-class=v] .vrow .vcol.vctrl{font-size:12px}.v[data-class=v] .emoji,.v[data-class=v] .vemoji{max-width:25px;vertical-align:middle;margin:0 1px;display:inline-block}.v[data-class=v] .vwrap{border:1px solid #f0f0f0;border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;padding:10px}.v[data-class=v] .vwrap input{background:transparent}.v[data-class=v] .vwrap .vedit{position:relative;padding-top:10px}.v[data-class=v] .vwrap .cancel-reply-btn{position:absolute;right:5px;top:5px;cursor:pointer}.v[data-class=v] .vwrap .vemojis{display:none;font-size:18px;max-height:145px;overflow:auto;padding-bottom:10px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v[data-class=v] .vwrap .vemojis i{font-style:normal;padding-top:7px;width:36px;cursor:pointer;text-align:center;display:inline-block;vertical-align:middle}.v[data-class=v] .vwrap .vpreview{padding:7px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v[data-class=v] .vwrap .vheader .vinput{width:33.33%;border-bottom:1px dashed #dedede}.v[data-class=v] .vwrap .vheader.item2 .vinput{width:50%}.v[data-class=v] .vwrap .vheader.item1 .vinput{width:100%}.v[data-class=v] .vwrap .vheader .vinput:focus{border-bottom-color:#eb5055}@media screen and (max-width:520px){.v[data-class=v] .vwrap .vheader.item2 .vinput,.v[data-class=v] .vwrap .vheader .vinput{width:100%}}.v[data-class=v] .vpower{color:#999;font-size:.75em;padding:.5em 0}.v[data-class=v] .vpower a{font-size:.75em}.v[data-class=v] .vcount{padding:5px;font-weight:600;font-size:1.25em}.v[data-class=v] ol,.v[data-class=v] ul{padding:0;margin-left:1.25em}.v[data-class=v] .txt-center{text-align:center}.v[data-class=v] .txt-right{text-align:right}.v[data-class=v] .pd5{padding:5px}.v[data-class=v] .pd10{padding:10px}.v[data-class=v] .veditor{width:100%;min-height:8.75em;font-size:.875em;background:transparent;resize:vertical;-webkit-transition:all .25s ease;transition:all .25s ease}.v[data-class=v] .vbtn{-webkit-transition-duration:.4s;transition-duration:.4s;text-align:center;color:#555;border:1px solid #ededed;border-radius:.3em;display:inline-block;background:transparent;margin-bottom:0;font-weight:400;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:.5em 1.25em;font-size:.875em;line-height:1.42857143;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none}.v[data-class=v] .vbtn+.vbtn{margin-left:1.25em}.v[data-class=v] .vbtn:active,.v[data-class=v] .vbtn:hover{color:#3090e4;border-color:#3090e4}.v[data-class=v] .vbtn:disabled{border-color:#e1e1e1;color:#e1e1e1;background-color:#fdfafa;cursor:not-allowed}.v[data-class=v] .vempty{padding:1.25em;text-align:center;color:#555;overflow:auto}.v[data-class=v] .vsys{display:inline-block;padding:.2em .5em;font-size:.75em;border-radius:.2em;margin-right:.3em}@media screen and (max-width:520px){.v[data-class=v] .vsys{display:none}}.v[data-class=v] .vcards{width:100%}.v[data-class=v] .vcards .vcard{padding-top:1.25em;position:relative;display:block}.v[data-class=v] .vcards .vcard:after{content:"";clear:both;display:block}.v[data-class=v] .vcards .vcard .vimg{width:3.125em;height:3.125em;float:left;border-radius:50%;margin-right:.7525em;border:1px solid #f5f5f5;padding:.125em}@media screen and (max-width:720px){.v[data-class=v] .vcards .vcard .vimg{width:2.5em;height:2.5em}}.v[data-class=v] .vcards .vcard .vhead{line-height:1.5;margin-top:0}.v[data-class=v] .vcards .vcard .vhead .vnick{position:relative;font-size:.875em;font-weight:500;margin-right:.875em;cursor:pointer;text-decoration:none;display:inline-block}.v[data-class=v] .vcards .vcard .vhead .vnick:hover{color:#d7191a}.v[data-class=v] .vcards .vcard .vh{overflow:hidden;padding-bottom:.5em;border-bottom:1px dashed #f5f5f5}.v[data-class=v] .vcards .vcard .vh .vtime{font-size:.75em;margin-right:.875em}.v[data-class=v] .vcards .vcard .vh .vmeta{line-height:1;position:relative}.v[data-class=v] .vcards .vcard .vh .vmeta .vat{font-size:.8125em;color:#ef2f11;cursor:pointer;float:right}.v[data-class=v] .vcards .vcard:last-child .vh{border-bottom:none}.v[data-class=v] .vcards .vcard .vcontent{word-wrap:break-word;word-break:break-all;font-size:.875em;line-height:2;position:relative;margin-bottom:.75em;padding-top:.625em}.v[data-class=v] .vcards .vcard .vcontent.expand{cursor:pointer;max-height:8em;overflow:hidden}.v[data-class=v] .vcards .vcard .vcontent.expand:before{display:block;content:"";position:absolute;width:100%;left:0;top:0;bottom:3.15em;background:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,.9)));background:linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.9));z-index:999}.v[data-class=v] .vcards .vcard .vcontent.expand:after{display:block;content:attr(data-expand);text-align:center;color:#828586;position:absolute;width:100%;height:3.15em;line-height:3.15em;left:0;bottom:0;z-index:999;background:hsla(0,0%,100%,.9)}.v[data-class=v] .vcards .vcard .vquote{padding-left:1em;border-left:1px dashed hsla(0,0%,93%,.5)}.v[data-class=v] .vcards .vcard .vquote .vimg{width:2.225em;height:2.225em}.v[data-class=v] .vpage .vmore{margin:1em 0}.v[data-class=v] .clear{content:"";display:block;clear:both}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes pulse{50%{background:#dcdcdc}}@keyframes pulse{50%{background:#dcdcdc}}.v[data-class=v] .vspinner{width:22px;height:22px;display:inline-block;border:6px double #a0a0a0;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear;position:relative;vertical-align:middle;margin:0 5px}.dark .v[data-class=v] .status-bar,.dark .v[data-class=v] .veditor,.dark .v[data-class=v] .vinput,.dark .v[data-class=v] p,.dark .v[data-class=v] pre code,.night .v[data-class=v] .status-bar,.night .v[data-class=v] .veditor,.night .v[data-class=v] .vinput,.night .v[data-class=v] p,.night .v[data-class=v] pre code,.theme__dark .v[data-class=v] .status-bar,.theme__dark .v[data-class=v] .veditor,.theme__dark .v[data-class=v] .vinput,.theme__dark .v[data-class=v] p,.theme__dark .v[data-class=v] pre code,[data-theme=dark] .v[data-class=v] .status-bar,[data-theme=dark] .v[data-class=v] .veditor,[data-theme=dark] .v[data-class=v] .vinput,[data-theme=dark] .v[data-class=v] p,[data-theme=dark] .v[data-class=v] pre code{color:#b2b2b5}.dark .v[data-class=v] .vsys,.dark .v[data-class=v] .vtime,.night .v[data-class=v] .vsys,.night .v[data-class=v] .vtime,.theme__dark .v[data-class=v] .vsys,.theme__dark .v[data-class=v] .vtime,[data-theme=dark] .v[data-class=v] .vsys,[data-theme=dark] .v[data-class=v] .vtime{color:#929298}.dark .v[data-class=v] code,.dark .v[data-class=v] pre,.dark .v[data-class=v] pre code,.night .v[data-class=v] code,.night .v[data-class=v] pre,.night .v[data-class=v] pre code,.theme__dark .v[data-class=v] code,.theme__dark .v[data-class=v] pre,.theme__dark .v[data-class=v] pre code,[data-theme=dark] .v[data-class=v] code,[data-theme=dark] .v[data-class=v] pre,[data-theme=dark] .v[data-class=v] pre code{color:#929298;background-color:#151414}.dark .v[data-class=v] .vwrap,.night .v[data-class=v] .vwrap,.theme__dark .v[data-class=v] .vwrap,[data-theme=dark] .v[data-class=v] .vwrap{border-color:#b2b2b5}.dark .v[data-class=v] .vicon,.night .v[data-class=v] .vicon,.theme__dark .v[data-class=v] .vicon,[data-theme=dark] .v[data-class=v] .vicon{fill:#b2b2b5}.dark .v[data-class=v] .vicon.actived,.night .v[data-class=v] .vicon.actived,.theme__dark .v[data-class=v] .vicon.actived,[data-theme=dark] .v[data-class=v] .vicon.actived{fill:#66b1ff}.dark .v[data-class=v] .vbtn,.night .v[data-class=v] .vbtn,.theme__dark .v[data-class=v] .vbtn,[data-theme=dark] .v[data-class=v] .vbtn{color:#b2b2b5;border-color:#b2b2b5}.dark .v[data-class=v] .vbtn:hover,.night .v[data-class=v] .vbtn:hover,.theme__dark .v[data-class=v] .vbtn:hover,[data-theme=dark] .v[data-class=v] .vbtn:hover{color:#66b1ff;border-color:#66b1ff}.dark .v[data-class=v] a:hover,.night .v[data-class=v] a:hover,.theme__dark .v[data-class=v] a:hover,[data-theme=dark] .v[data-class=v] a:hover{color:#d7191a}.dark .v[data-class=v] .vcards .vcard .vcontent.expand:before,.night .v[data-class=v] .vcards .vcard .vcontent.expand:before,.theme__dark .v[data-class=v] .vcards .vcard .vcontent.expand:before,[data-theme=dark] .v[data-class=v] .vcards .vcard .vcontent.expand:before{background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.3)),to(rgba(0,0,0,.7)));background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0,.7))}.dark .v[data-class=v] .vcards .vcard .vcontent.expand:after,.night .v[data-class=v] .vcards .vcard .vcontent.expand:after,.theme__dark .v[data-class=v] .vcards .vcard .vcontent.expand:after,[data-theme=dark] .v[data-class=v] .vcards .vcard .vcontent.expand:after{background:rgba(0,0,0,.7)}@media (prefers-color-scheme:dark){.v[data-class=v] .status-bar,.v[data-class=v] .veditor,.v[data-class=v] .vinput,.v[data-class=v] p,.v[data-class=v] pre code{color:#b2b2b5}.v[data-class=v] .vsys,.v[data-class=v] .vtime{color:#929298}.v[data-class=v] code,.v[data-class=v] pre,.v[data-class=v] pre code{color:#929298;background-color:#151414}.v[data-class=v] .vwrap{border-color:#b2b2b5}.v[data-class=v] .vicon{fill:#b2b2b5}.v[data-class=v] .vicon.actived{fill:#66b1ff}.v[data-class=v] .vbtn{color:#b2b2b5;border-color:#b2b2b5}.v[data-class=v] .vbtn:hover{color:#66b1ff;border-color:#66b1ff}.v[data-class=v] a:hover{color:#d7191a}.v[data-class=v] .vcards .vcard .vcontent.expand:before{background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.3)),to(rgba(0,0,0,.7)));background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0,.7))}.v[data-class=v] .vcards .vcard .vcontent.expand:after{background:rgba(0,0,0,.7)}}</style><script src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/clipboard.min.js.下载"></script></head>
+
+<body>
+    <div id="loading" class=""></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-list-ul"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/back_blue.png)">
+      <div class="brand">
+        <a href="https://abelsu7.top/" class="avatar waves-effect waves-circle waves-light">
+          <img src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/fong.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Abel Su</h5>
+          <a href="mailto:abelsu7@gmail.com" title="abelsu7@gmail.com" class="mail">abelsu7@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="https://abelsu7.top/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://abelsu7.top/archives/">
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://abelsu7.top/categories/">
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://abelsu7.top/tags/">
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://notes.abelsu7.top/">
+                <i class="icon icon-lg icon-sticky-note"></i>
+                笔记
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/abelsu7">
+                <i class="icon icon-lg icon-github"></i>
+                代码
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://abelsu7.top/friends/">
+                <i class="icon icon-lg icon-user"></i>
+                友链
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://abelsu7.top/bookmarks/">
+                <i class="icon icon-lg icon-bookmark"></i>
+                收藏
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://abelsu7.top/books/">
+                <i class="icon icon-lg icon-book"></i>
+                读书
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://abelsu7.top/movies/">
+                <i class="icon icon-lg icon-film"></i>
+                影视
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://abelsu7.top/games/">
+                <i class="icon icon-lg icon-gamepad"></i>
+                游戏
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://notes.abelsu7.top/#/links/wechat">
+                <i class="icon icon-lg icon-wechat"></i>
+                微信
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://abelsu7.top/2018/09/21/how-to-learn-coding/">
+                <i class="icon icon-lg icon-code"></i>
+                学习
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://abelsu7.top/wiki/">
+                <i class="icon icon-lg icon-sort-alpha-asc"></i>
+                速查
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://abelsu7.top/about/">
+                <i class="icon icon-lg icon-info-circle"></i>
+                关于
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Windows 10 彻底删除已配对的蓝牙设备</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字" data-kpxc-id="key">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale in">
+        <h1 class="title">Windows 10 彻底删除已配对的蓝牙设备</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-04-30T08:18:06.000Z" itemprop="datePublished" class="page-time">
+  2019-04-30
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="https://abelsu7.top/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/">工具软件</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3 active"><a class="post-toc-link" href="https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/#1-%E5%95%A5%E9%97%AE%E9%A2%98"><span class="post-toc-text">1. 啥问题</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/#2-%E9%82%A3%E5%92%8B%E6%95%B4"><span class="post-toc-text">2. 那咋整</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="post-toc-text">参考文章</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-win10-completely-remove-bluetooth-device" class="post-article article-type-post fade in" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Windows 10 彻底删除已配对的蓝牙设备</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-04-30 16:18:06" datetime="2019-04-30T08:18:06.000Z" itemprop="datePublished">2019-04-30</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="https://abelsu7.top/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/">工具软件</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display: inline;">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv">1281</span>
+</span>
+
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <blockquote>
+<p><strong><em>ikbc DC-87 终于重新用蓝牙连上 XPS-13 了，我先去哭会儿！QAQ</em></strong></p>
+</blockquote>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/cover.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<a id="more"></a>
+<h3 id="1-啥问题"><a href="https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/#1-%E5%95%A5%E9%97%AE%E9%A2%98" class="headerlink" title="1. 啥问题"></a>1. 啥问题</h3><blockquote>
+<p><strong>系统环境</strong><code>Windows 10-1803</code></p>
+</blockquote>
+<p>去年用 <a href="http://www.ikbc.com.cn/prod_view.aspx?TypeId=73&amp;id=223&amp;fid=t3:73:3" target="_blank" rel="noopener">ikbc DC-87</a> 的<strong>蓝牙模式</strong>连接到我的 XPS 13 上，后来有一天突然就不能正常使用了。</p>
+<p>尝试了先在系统设置中删除设备，打算再重新配对，然而 Amazing 的是，<strong>删除设备之后</strong>，<code>HM KB3</code><strong>这个蓝牙设备又很快出现在列表中</strong>，<strong>并显示已配对</strong><code>(╯‵□′)╯︵┻━┻</code>：</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/bluetooth.png" alt="删除设备 HM KB3 后，又会自动显示「已配对」" title="">
+                </div>
+                <div class="image-caption">删除设备 HM KB3 后，又会自动显示「已配对」</div>
+            </figure>
+<p>然而<strong>设备无法删除就不能被识别为待配对的新设备</strong>，这样一来就<strong>没办法重新配对</strong>。。</p>
+<p>科学上网 Google 了一圈，<strong>重启、飞行模式、卸载设备、升级蓝牙驱动统统试过，全都不管用</strong>。。</p>
+<p>那叫一个心塞啊，只好先用有线模式连着，凑合过吧，还能离咋的。。</p>
+<h3 id="2-那咋整"><a href="https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/#2-%E9%82%A3%E5%92%8B%E6%95%B4" class="headerlink" title="2. 那咋整"></a>2. 那咋整</h3><p>本来最近都忘了这个事儿，今天突发奇想再次搜索一下，发现了这篇<strong>救命博客</strong>：</p>
+<blockquote>
+<p><a href="https://blog.csdn.net/u014595375/article/details/85730427" target="_blank" rel="noopener">Win10 彻底删除蓝牙设备 | CSDN</a></p>
+</blockquote>
+<p>这位 CSDN 博主也是看到一篇国外友人的文章，<strong>想必大家都是有缘人</strong>：</p>
+<blockquote>
+<p><a href="https://www.tenforums.com/drivers-hardware/22049-how-completely-remove-bluetooth-device-win-10-a.html" target="_blank" rel="noopener">How to completely remove a Bluetooth device from Win 10? | Windows Ten Forums</a></p>
+</blockquote>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/win10-forum.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>简单来说，<strong>彻底删除冥顽不化的蓝牙设备</strong>，总共分以下几步：</p>
+<ol>
+<li>下载 <a href="http://bluetoothinstaller.com/bluetooth-command-line-tools/" target="_blank" rel="noopener">Bluetooth Command Line Tools</a>，一路<strong>按默认选项完成安装</strong></li>
+<li>打开<code>cmd</code>或<code>powershell</code>，<strong>命令行输入</strong><code>btpair -u</code>，<strong>回车执行</strong>并等待一小会儿，这将<strong>取消所有蓝牙设备的配对</strong></li>
+<li>将你冥顽不化的蓝牙设备<strong>设置为配对状态</strong>，<strong>再次尝试配对</strong>，你就会惊奇的发现—— Bingo！配对成功</li>
+<li><strong>骂微软，感谢博主，然后哭一会儿</strong></li>
+</ol>
+<h3 id="参考文章"><a href="https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0" class="headerlink" title="参考文章"></a>参考文章</h3><blockquote>
+<ol>
+<li><a href="https://blog.csdn.net/u014595375/article/details/85730427" target="_blank" rel="noopener">Win10 彻底删除蓝牙设备 | CSDN</a></li>
+<li><a href="https://answers.microsoft.com/zh-hans/windows/forum/all/%E5%B7%B2%E9%85%8D%E5%AF%B9%E8%93%9D%E7%89%99/386fcf18-1ab5-4062-ab32-4f03ccc7648a" target="_blank" rel="noopener">已配对蓝牙设备无法删除 | Microsoft Community</a></li>
+<li><a href="https://www.tenforums.com/drivers-hardware/22049-how-completely-remove-bluetooth-device-win-10-a.html" target="_blank" rel="noopener">How to completely remove a Bluetooth device from Win 10? | Windows Ten Forums</a></li>
+<li><a href="http://bluetoothinstaller.com/bluetooth-command-line-tools/" target="_blank" rel="noopener">Bluetooth Command Line Tools</a></li>
+</ol>
+</blockquote>
+<div><strong>🚩推荐阅读</strong>（由<a href="https://github.com/huiwang/hexo-recommended-posts">hexo文章推荐插件</a>驱动）<ul><li><a href="https://abelsu7.top/2019/07/03/windows-fluent-terminal/">Fluent Terminal：Windows 下的炫酷终端</a></li><li><a href="https://abelsu7.top/2019/06/13/windows-powershell-beautify/">Windows 10 终端 PowerShell 外观美化</a></li><li><a href="https://abelsu7.top/2019/06/10/tools-for-monitor-cpu-temp/">几款监控 CPU 温度的软件推荐</a></li><li><a href="https://abelsu7.top/2018/05/11/aria2/">开源下载工具aria2使用教程</a></li><li><a href="https://lyonger.cn/article/Windows%E4%B8%8B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Windows下常用命令</a></li><li><a href="http://ashin.wang/Windows-Skill/">Windows笔记</a></li></ul></div>
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-09-01T13:04:11.773Z" itemprop="dateUpdated">2019-09-01 21:04:11</time>
+</span><br>
+
+
+        
+        文章发布地址：<a href="https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/" target="_blank" rel="external">https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://abelsu7.top/">
+            <img src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/fong.jpg" alt="Abel Su">
+            Abel Su
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link waves-effect waves-button" href="https://abelsu7.top/tags/Windows/">Windows</a></li><li class="article-tag-list-item"><a class="article-tag-list-link waves-effect waves-button" href="https://abelsu7.top/tags/%E8%93%9D%E7%89%99/">蓝牙</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/&amp;title=%E3%80%8AWindows%2010%20%E5%BD%BB%E5%BA%95%E5%88%A0%E9%99%A4%E5%B7%B2%E9%85%8D%E5%AF%B9%E7%9A%84%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E3%80%8B%20%E2%80%94%20Keep%20Coding&amp;pic=https://abelsu7.top/img/fong.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/&amp;title=%E3%80%8AWindows%2010%20%E5%BD%BB%E5%BA%95%E5%88%A0%E9%99%A4%E5%B7%B2%E9%85%8D%E5%AF%B9%E7%9A%84%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E3%80%8B%20%E2%80%94%20Keep%20Coding&amp;source=ikbc%20DC-87%20%E7%BB%88%E4%BA%8E%E9%87%8D%E6%96%B0%E7%94%A8%E8%93%9D%E7%89%99%E8%BF%9E%E4%B8%8A%20XPS-13%20%E4%BA%86%EF%BC%8C%E6%88%91%E5%85%88%E5%8E%BB%E5%93%AD%E4%BC%9A%E5%84%BF%EF%BC%81QAQ%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=%E3%80%8AWindows%2010%20%E5%BD%BB%E5%BA%95%E5%88%A0%E9%99%A4%E5%B7%B2%E9%85%8D%E5%AF%B9%E7%9A%84%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E3%80%8B%20%E2%80%94%20Keep%20Coding&amp;url=https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/&amp;via=https://abelsu7.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="https://abelsu7.top/2019/05/05/fedora-gnome-desktop-icon/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Fedora 30 显示桌面图标</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="https://abelsu7.top/2019/04/29/ubuntu-1804-add-opsx-apt-source/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Ubuntu 18.04 配置阿里云 OPSX APT 安装源</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment v" id="vcomments" data-class="v"><div class="vpanel"><div class="vwrap"><p class="cancel-reply text-right" style="display:none;" title="取消回复"><svg class="vicon cancel-reply-btn" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4220" width="22" height="22"><path d="M796.454 985H227.545c-50.183 0-97.481-19.662-133.183-55.363-35.7-35.701-55.362-83-55.362-133.183V227.545c0-50.183 19.662-97.481 55.363-133.183 35.701-35.7 83-55.362 133.182-55.362h568.909c50.183 0 97.481 19.662 133.183 55.363 35.701 35.702 55.363 83 55.363 133.183v568.909c0 50.183-19.662 97.481-55.363 133.183S846.637 985 796.454 985zM227.545 91C152.254 91 91 152.254 91 227.545v568.909C91 871.746 152.254 933 227.545 933h568.909C871.746 933 933 871.746 933 796.454V227.545C933 152.254 871.746 91 796.454 91H227.545z" p-id="4221"></path><path d="M568.569 512l170.267-170.267c15.556-15.556 15.556-41.012 0-56.569s-41.012-15.556-56.569 0L512 455.431 341.733 285.165c-15.556-15.556-41.012-15.556-56.569 0s-15.556 41.012 0 56.569L455.431 512 285.165 682.267c-15.556 15.556-15.556 41.012 0 56.569 15.556 15.556 41.012 15.556 56.569 0L512 568.569l170.267 170.267c15.556 15.556 41.012 15.556 56.569 0 15.556-15.556 15.556-41.012 0-56.569L568.569 512z" p-id="4222"></path></svg></p><div class="vheader item3"><input name="nick" placeholder="昵称" class="vnick vinput" type="text" data-kpxc-id="kpxcpw342845639"><input name="mail" placeholder="邮箱" class="vmail vinput" type="email" data-kpxc-id="kpxcpw342845640"><input name="link" placeholder="网址(http://)" class="vlink vinput" type="text" data-kpxc-id="kpxcpw342845641"></div><div class="vedit"><textarea id="veditor" class="veditor vinput" placeholder="Write a comment"></textarea><div class="vrow"><div class="vcol vcol-60 status-bar"></div><div class="vcol vcol-40 vctrl text-right"><span title="表情" class="vicon vemoji-btn"><svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16172" width="22" height="22"><path d="M512 1024a512 512 0 1 1 512-512 512 512 0 0 1-512 512zM512 56.888889a455.111111 455.111111 0 1 0 455.111111 455.111111 455.111111 455.111111 0 0 0-455.111111-455.111111zM312.888889 512A85.333333 85.333333 0 1 1 398.222222 426.666667 85.333333 85.333333 0 0 1 312.888889 512z" p-id="16173"></path><path d="M512 768A142.222222 142.222222 0 0 1 369.777778 625.777778a28.444444 28.444444 0 0 1 56.888889 0 85.333333 85.333333 0 0 0 170.666666 0 28.444444 28.444444 0 0 1 56.888889 0A142.222222 142.222222 0 0 1 512 768z" p-id="16174"></path><path d="M782.222222 391.964444l-113.777778 59.733334a29.013333 29.013333 0 0 1-38.684444-10.808889 28.444444 28.444444 0 0 1 10.24-38.684445l113.777778-56.888888a28.444444 28.444444 0 0 1 38.684444 10.24 28.444444 28.444444 0 0 1-10.24 36.408888z" p-id="16175"></path><path d="M640.568889 451.697778l113.777778 56.888889a27.875556 27.875556 0 0 0 38.684444-10.24 27.875556 27.875556 0 0 0-10.24-38.684445l-113.777778-56.888889a28.444444 28.444444 0 0 0-38.684444 10.808889 28.444444 28.444444 0 0 0 10.24 38.115556z" p-id="16176"></path></svg></span><span title="预览" class="vicon vpreview-btn"><svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="17688" width="22" height="22"><path d="M502.390154 935.384615a29.538462 29.538462 0 1 1 0 59.076923H141.430154C79.911385 994.461538 29.538462 946.254769 29.538462 886.153846V137.846154C29.538462 77.745231 79.950769 29.538462 141.390769 29.538462h741.218462c61.44 0 111.852308 48.206769 111.852307 108.307692v300.268308a29.538462 29.538462 0 1 1-59.076923 0V137.846154c0-26.899692-23.355077-49.230769-52.775384-49.230769H141.390769c-29.420308 0-52.775385 22.331077-52.775384 49.230769v748.307692c0 26.899692 23.355077 49.230769 52.775384 49.230769h360.999385z" p-id="17689"></path><path d="M196.923077 216.615385m29.538461 0l374.153847 0q29.538462 0 29.538461 29.538461l0 0q0 29.538462-29.538461 29.538462l-374.153847 0q-29.538462 0-29.538461-29.538462l0 0q0-29.538462 29.538461-29.538461Z" p-id="17690"></path><path d="M649.846154 846.769231a216.615385 216.615385 0 1 0 0-433.230769 216.615385 216.615385 0 0 0 0 433.230769z m0 59.076923a275.692308 275.692308 0 1 1 0-551.384616 275.692308 275.692308 0 0 1 0 551.384616z" p-id="17691"></path><path d="M807.398383 829.479768m20.886847-20.886846l0 0q20.886846-20.886846 41.773692 0l125.321079 125.321079q20.886846 20.886846 0 41.773693l0 0q-20.886846 20.886846-41.773693 0l-125.321078-125.321079q-20.886846-20.886846 0-41.773693Z" p-id="17692"></path></svg></span></div></div></div><div class="vrow"><div class="vcol vcol-30"><a alt="Markdown is supported" href="https://guides.github.com/features/mastering-markdown/" class="vicon" target="_blank"><svg class="markdown" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z"></path></svg></a></div><div class="vcol vcol-70 text-right"><button type="button" title="Cmd|Ctrl+Enter" class="vsubmit vbtn">提交</button></div></div><div class="vemojis" style="display:none;"></div><div class="vinput vpreview" style="display:none;"></div><div style="display:none;" class="vmark"></div></div></div><div class="vcount" style="display: block;"><span class="vnum">1</span> 评论</div><div class="vload-top text-center" style="display:none;"><i class="vspinner" style="width:30px;height:30px;"></i></div><div class="vcards"><div class="vcard" id="5d575e0f43e78c0068316795"><img class="vimg" src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/d41d8cd98f00b204e9800998ecf8427e.png"><div class="vh"><div class="vhead"><span class="vnick">Anonymous</span> <span class="vsys">Chrome 76.0.3809.100</span> <span class="vsys">Windows 10.0</span></div><div class="vmeta"><span class="vtime">2019-08-17</span><span class="vat" data-vm-id="5d575e0f43e78c0068316795" data-self-id="5d575e0f43e78c0068316795">回复</span></div><div class="vcontent" data-expand="查看更多..."><p>都是有缘人555555555太感谢了！！！！</p>
+</div><div class="vreply-wrapper" data-self-id="5d575e0f43e78c0068316795"></div><div class="vquote" data-self-id="5d575e0f43e78c0068316795"><div class="vcard" id="5d807626a673f50070b2cdf2"><img class="vimg" src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/d41d8cd98f00b204e9800998ecf8427e.png"><div class="vh"><div class="vhead"><span class="vnick">Anonymous</span> <span class="vsys">Chrome 77.0.3865.75</span> <span class="vsys">Windows 10.0</span></div><div class="vmeta"><span class="vtime">2019-09-17</span><span class="vat" data-vm-id="5d575e0f43e78c0068316795" data-self-id="5d807626a673f50070b2cdf2">回复</span></div><div class="vcontent" data-expand="查看更多..."><p><a href="https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/#5d575e0f43e78c0068316795" target="_blank" rel="nofollow">@Anonymous </a> , 我试了还是没有用</p>
+</div><div class="vreply-wrapper" data-self-id="5d807626a673f50070b2cdf2"></div><div class="vquote" data-self-id="5d807626a673f50070b2cdf2"></div></div></div></div></div></div></div><div class="vload-bottom text-center" style="display: none;"><i class="vspinner" style="width:30px;height:30px;"></i></div><div class="vempty" style="display:none;"></div><div class="vpage txt-center" style="display:none"><button type="button" class="vmore vbtn">加载更多...</button></div><div class="vpower txt-right">Powered By <a href="https://valine.js.org/" target="_blank">Valine</a><br>v1.4.14</div></div>
+    <!-- <div class="comment" id="comment"></div> -->
+    <script src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/av-min.js.下载"></script>
+    <script src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/Valine.min.js.下载"></script>
+    <!-- <script src="//t1.aixinxi.net/o_1c3n4pim01nl3jg91b6l1kjtkvsa.js"></script> -->
+    <!-- <script src="/js/Valine.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cat.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/jquery.min.js.下载"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            av: AV,
+            // el: '#comments',
+            el: '#vcomments',
+            emoticon_url: 'https://abelsu7.top/alu', //表情图片网址
+            emoticon_list: ["赞一个.png","坐等.png","长草.png","阴暗.png","邪恶.png","小眼睛.png","想一想.png","献黄瓜.png","献花.png","喜极而泣.png","无语.png","无所谓.png","无奈.png","投降.png","深思.png","期待.png","狂汗.png","蜡烛.png","看不见.png","惊喜.png","击掌.png","欢呼.png","得意.png","不出所料.png","观察.png"],//表情图片文件名
+            // notify: 'false' == 'false',
+            // verify: 'false' == 'false',
+            // notify: 'false',
+            // verify: 'false',
+            notify: false,
+            verify: false,
+            appId: "aP2YQo0mfrRpTLrLb1bchILb-gzGzoHsz",
+            appKey: "Cp82umQdGScRRFUYLmob6yyK",
+            avatar: "mp",
+            placeholder: "Write a comment",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        感谢支持！
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/wechat.png" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/wechat.png" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-item switch">切换</span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display: inline;">
+        站点总访客数：<span id="busuanzi_value_site_uv">42884</span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display: inline;">
+        站点总访问量：<span id="busuanzi_value_site_pv">91113</span>
+    </span>
+</p>
+
+
+            <p>
+                
+                    <span>
+                        <a href="https://abelsu7.top/atom.xml" target="_blank" class="rss" title="rss">
+                            <i class="icon icon-lg icon-rss"></i>
+                        </a>
+                    </span>
+                    
+                        <span>
+                            博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a>
+                        </span>
+            </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>
+                Abel Su ©
+                    
+                        2018 -
+                            
+                                2020
+            </span>
+            <span>
+                
+                    <a href="http://beian.miit.gov.cn/" target="_blank">
+                        粤ICP备16068788号-2
+                    </a>
+                    <br>
+                    
+                        Power by
+                        <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+                        <a href="https://github.com/abelsu7/hexo-theme-indigo-plus" target="_blank">indigo plus</a>
+                        </span></p><p>Hosted by <a href="https://cloud.tencent.com/product/cos" target="_blank" style="font-weight: bold">腾讯云 COS</a></p>
+            
+        <p></p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+<a href="javascript:;" id="gobottom" class="waves-effect waves-circle waves-light in"><span class="icon icon-lg icon-comments"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li class=" waves-effect waves-block">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/&amp;title=%E3%80%8AWindows%2010%20%E5%BD%BB%E5%BA%95%E5%88%A0%E9%99%A4%E5%B7%B2%E9%85%8D%E5%AF%B9%E7%9A%84%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E3%80%8B%20%E2%80%94%20Keep%20Coding&amp;pic=https://abelsu7.top/img/fong.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li class=" waves-effect waves-block">
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li class=" waves-effect waves-block">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/&amp;title=%E3%80%8AWindows%2010%20%E5%BD%BB%E5%BA%95%E5%88%A0%E9%99%A4%E5%B7%B2%E9%85%8D%E5%AF%B9%E7%9A%84%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E3%80%8B%20%E2%80%94%20Keep%20Coding&amp;source=ikbc%20DC-87%20%E7%BB%88%E4%BA%8E%E9%87%8D%E6%96%B0%E7%94%A8%E8%93%9D%E7%89%99%E8%BF%9E%E4%B8%8A%20XPS-13%20%E4%BA%86%EF%BC%8C%E6%88%91%E5%85%88%E5%8E%BB%E5%93%AD%E4%BC%9A%E5%84%BF%EF%BC%81QAQ%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li class=" waves-effect waves-block">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li class=" waves-effect waves-block">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=%E3%80%8AWindows%2010%20%E5%BD%BB%E5%BA%95%E5%88%A0%E9%99%A4%E5%B7%B2%E9%85%8D%E5%AF%B9%E7%9A%84%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E3%80%8B%20%E2%80%94%20Keep%20Coding&amp;url=https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/&amp;via=https://abelsu7.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li class=" waves-effect waves-block">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://abelsu7.top/2019/04/30/win10-completely-remove-bluetooth-device/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACrElEQVR42u3ayY7CQAwFQP7/pxlpztA8LyEcKqdRyFYZye3Yfjzi7fm/Jfufx6165PkKaxseHh5e69GT2+Sk81kTavUl4uHh4V3HOwf95DbnPecr55jqQoWHh4d3L290m0FqniwteHh4eL/Jq37p5y+lmi7j4eHh/QIvL6e+25McmcOSBWm51oKHh4cX86oNsF/4+8L+Hh4eHt6gq56nyEmCntx9MpTw4mp4eHh4F/DOyXE13k6icQKrNsPw8PDwruPNW1DJA+WLQbWc0axV4+Hh4Y158wGseZmjF/oLeDw8PLwxb2toIH/oeblh9Obw8PDwlvrmvQfaSq8nvGSUAQ8PD2+X12veV1tf8xCfU1/09/Dw8PBWebvbZJggf3EXAvDw8PDGhYlzI6pazkjGC/Jz888APDw8vF1etYgwGZaqJr7VF4SHh4d3F69aeqgG9GSsKnm50TF4eHh4X+HljavqItG78qjwgYeHh3cBb/LBn5N6jbHeC8XDw8P7Pm8r5e0F98ky8/a+eHh4eKu83XBcXSp6ZdykCYeHh4d3Ly8PxL3j80Q8b9E1vxXw8PDwinOeSTJ9DuXVEYF5CbjwKx4eHt4qLykKFMqm8SBCtSCbJPR4eHh4d/HyX8s3ixP36tL14bsBDw8Pb5W3Feh7ZYhkGVj4B+Dh4eGt8qpBvBrukwJHNdAXSs94eHh4l/EmgLxYUE3B84T77Vl4eHh4q7xeyjtPhXuw0dAVHh4e3hKvuZLERyZn9Rjz4QY8PDy8CS9fDPKH640CTNh4eHh43+dVy7J5v6k61FVduz7cEQ8PD+/HeElbq1dEWBtlwMPDw7uVl4fyPP3NAfkgAh4eHt53eJOmVy8RT4J7tTjyyLtteHh4eANerwFWHSDIxwWqJeNL+nt4eHh4r6/5Bw9BDQEKvlzGAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/waves.min.js.下载"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/main.min.js.下载"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl"></template>
+
+<script src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/search.min.js.下载" async=""></script>
+
+
+
+
+
+
+<script async="" src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/busuanzi.pure.mini.js.下载"></script>
+
+
+
+
+<script src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/prism.min.js.下载"></script>
+<script src="./Windows 10 彻底删除已配对的蓝牙设备 _ Keep Coding _ 苏易北_files/prism-vim.min.js.下载"></script>
+
+
+</body></html>
