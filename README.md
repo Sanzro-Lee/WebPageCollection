@@ -1,2 +1,3 @@
-Save these web pages for backup, when I want to review it.
-and the bookmark is for Chrome, import the bookmark file to Google Chrome or anyothers Chromium browser.
+Save these web pages for backup, review these files for convenient.<br>
+And the bookmark file was backup for Chrome,<br>
+use: import the bookmark file to Google Chrome or anyothers Chromium browser.
